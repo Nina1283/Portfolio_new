@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Programmierprojekte | Nina</title>
+</head>
+        
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="images/Zeichnung_1-removebg-preview.png" class="logo">
+        </a>
+        <input type="checkbox" id="toggle_button">
+        <label for="toggle_button" class="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul>
+            <li><a href="beruflicher_werdegang.html">Beruflicher Werdegang</a></li>
+            <li class="expandable_li">
+                <input type="checkbox" id="projects_checkbox">
+                <label for="projects_checkbox">Portfolio</label>
+                <ul class="dropdown">
+                    <li><a href="programmierprojekte.html">Programmierung</a></li>
+                    <li><a href="kunst_projekte.html">Kunst</a></li>
+                </ul>
+            </li>
+        </ul>  
+    </nav>
+    
+    <div class="row">
+      <div class="column">
+          <a class="link" href="portfolio_progrmming_sites/snake_pic.html">  
+            <img src="images/snake (r).png" class="pictures">
+            <div class="overlay">Snake</div>
+          </a>      
+      </div>
+      <div class="column">
+          <a class="link" data-clicked="false" data-href="portfolio_progrmming_sites/temperature-converter_pic.html">
+            <img src="images/temperature-converter(r).png" class="pictures">
+            <div class="overlay">Temperature-Converter</div>      
+          </a>
+      </div>
+      <div class="column">
+          <a class="link" data-clicked="false" data-href="portfolio_progrmming_sites/edc_pic.html">
+            <img src="images/easter-date-calculator(r).png" class="pictures">
+            <div class="overlay">Easter-Date-Converter</div>      
+          </a>
+      </div>
+      <div class="column">
+          <a class="link" data-clicked="false" data-href="portfolio_progrmming_sites/pong_pic.html">
+            <img src="images/pong(r).png" class="pictures">
+            <div class="overlay">Pong</div>      
+          </a>
+      </div>
+      <div class="column">
+          <a class="link" data-clicked="false" data-href="portfolio_progrmming_sites/PA_pic.html">
+            <img src="images/PA (r).png" class="pictures">
+            <div class="overlay">PA</div>      
+          </a>
+      </div>
+  </div>
+  <!--script src="Portfolio_klickverhalten.js"></script> < JavaScript-Datei -->
+</body>
+</html>
