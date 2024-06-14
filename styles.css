@@ -327,10 +327,12 @@ nav input[type="checkbox"] {
   margin-left: 20em;
   margin-block-start: 1em;
 }
+
 .column {
   position: relative;
   margin: 15px;
 }
+
 .column .overlay {
   position: absolute;
   color: #fff;
@@ -346,30 +348,33 @@ nav input[type="checkbox"] {
   text-align: center;
   z-index: 1;
   font-size: 40px;
-  font-weight: bold ;
+  font-weight: bold;
 }
+
 .column:hover .overlay {
   opacity: 1;
-  background-color: rgba(133, 7, 105, 0.5); /* Blau bei Mouseover */
+  background-color: rgba(133, 7, 105, 0.5);
   transform: scale(0.9);
   transition: transform 0.5s ease;
 }
+
 .pictures {
   width: 100%;
   height: 21em;
-  transition: transform 0.5s ease; /* Übergangseffekt für das Verkleinern */
-}
-.column:hover .pictures {
-    transform: scale(0.9); /* Verkleinert das Bild auf 90% seiner ursprünglichen Größe */
+  transition: transform 0.5s ease;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media(max-width:998px){
+.column:hover .pictures {
+  transform: scale(0.9);
+}
+
+@media (max-width: 998px) {
   .row {
-    flex-direction: column;
-    margin-left: 0;
+      flex-direction: column;
+      margin-left: 0;
   }
+
   .column {
-    margin: 15px auto;
+      margin: 15px auto;
   }
 }
