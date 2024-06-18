@@ -22,4 +22,24 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    const columns = document.querySelectorAll('.column');
+
+    columns.forEach(column => {
+      column.addEventListener('click', function () {
+        columns.forEach(col => col.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.column').forEach(column => {
+          column.addEventListener('click', function () {
+            const href = this.getAttribute('data-url');
+            if (href) {
+              window.location.href = href;
+            }
+          });
+        });
+      });
 });
